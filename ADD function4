@@ -1,0 +1,8 @@
+total = 0
+def sum(a, b=0):
+
+    """this function takes two arguments which are integer numbers ,and it will
+    return sum of them as an output """
+    total = a+b
+    print("total inside function:", total)
+    return total
