@@ -1,0 +1,26 @@
+Python 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> rent=1220
+\
+>>> gas=202.5
+>>> groceries=305.6
+>>> print(rent)
+1220
+>>> total=rent+gas
+>>> print(total)
+1422.5
+>>> total=rent+gas+groceries
+>>> print(total)
+1728.1
+>>> rent=1400
+>>> item1="rent"
+>>> item2="gas"
+>>> item3="groceries"
+>>> print("expenses items:", item1, item2, item3)
+expenses items: rent gas groceries
+>>> true =4
+>>> true=4
+>>> True=4
+SyntaxError: cannot assign to True
+>>> foo+bar=4
+SyntaxError: cannot assign to expression here. Maybe you meant '==' instead of '='?
