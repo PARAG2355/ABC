@@ -1,0 +1,12 @@
+total = 0
+def sum(a, b=0):
+    '''default varibale b=0'''
+    print("a:", a)
+    print("b:", b)
+
+    total = a+b
+    print("total inside function:", total)
+    return total
+n = sum(5,)
+
+print("total outside function:", total)
