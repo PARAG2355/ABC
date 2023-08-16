@@ -1,0 +1,10 @@
+Key_location = "chair"
+location = ["garage", "television", "table", "chair", "bed"]
+for i in location:
+    if i == Key_location:
+        print("key is found in ", i)
+        break
+    else:
+        print("key isn't found in", i)
+
+
