@@ -1,0 +1,54 @@
+Python 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+d={"tom":7326789820, "rob":7325730239, "joe":7320923203}
+d
+{'tom': 7326789820, 'rob': 7325730239, 'joe': 7320923203}
+d["tom"]
+7326789820
+d["sam"]
+Traceback (most recent call last):
+  File "<pyshell#3>", line 1, in <module>
+    d["sam"]
+KeyError: 'sam'
+d["sam"]=7395679879
+d
+{'tom': 7326789820, 'rob': 7325730239, 'joe': 7320923203, 'sam': 7395679879}
+for key in d:
+    print("key:",key,"value:",d[key])
+
+    
+key: tom value: 7326789820
+key: rob value: 7325730239
+key: joe value: 7320923203
+key: sam value: 7395679879
+>>> for k,v in d.items():
+...     print("key:",key,"value:",v)
+... 
+...     
+key: sam value: 7326789820
+key: sam value: 7325730239
+key: sam value: 7320923203
+key: sam value: 7395679879
+>>> "tom" in d
+True
+>>> d
+{'tom': 7326789820, 'rob': 7325730239, 'joe': 7320923203, 'sam': 7395679879}
+>>> "samir" in d
+False
+>>> d.clear()
+>>> d
+{}
+>>> 
+>>> 
+>>> tuples
+Traceback (most recent call last):
+  File "<pyshell#19>", line 1, in <module>
+    tuples
+NameError: name 'tuples' is not defined. Did you mean: 'tuple'?
+>>> '''tuples'''
+'tuples'
+>>> point=(5,9)
+>>> point[0]
+5
+>>> point[1]
+9
