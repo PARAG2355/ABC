@@ -1,0 +1,55 @@
+Python 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> item1="bread"
+>>> item2="pasta"
+>>> item3="fruits"
+>>> items=["bread","pasta","fruits","veggies"]
+>>> items
+['bread', 'pasta', 'fruits', 'veggies']
+>>> items[0]
+'bread'
+>>> items[0,1]
+Traceback (most recent call last):
+  File "<pyshell#6>", line 1, in <module>
+    items[0,1]
+TypeError: list indices must be integers or slices, not tuple
+>>> items[0:1]
+['bread']
+>>> items[0:2]
+['bread', 'pasta']
+>>> items[-1]
+'veggies'
+>>> items.append("butter")
+>>> items
+['bread', 'pasta', 'fruits', 'veggies', 'butter']
+>>> insert.items[1,'butter']
+Traceback (most recent call last):
+  File "<pyshell#12>", line 1, in <module>
+    insert.items[1,'butter']
+NameError: name 'insert' is not defined
+>>> items.insert[1,'butter']
+Traceback (most recent call last):
+  File "<pyshell#13>", line 1, in <module>
+    items.insert[1,'butter']
+TypeError: 'builtin_function_or_method' object is not subscriptable
+items.insert(1,'butter')
+items
+['bread', 'butter', 'pasta', 'fruits', 'veggies', 'butter']
+food=["bread","pasta","fruits"]
+bathroom=["shampoo","soap"]
+items=food+bathroom
+items
+['bread', 'pasta', 'fruits', 'shampoo', 'soap']
+food+"soda"
+Traceback (most recent call last):
+  File "<pyshell#20>", line 1, in <module>
+    food+"soda"
+TypeError: can only concatenate list (not "str") to list
+items
+['bread', 'pasta', 'fruits', 'shampoo', 'soap']
+len(items)
+5
+"bread" in items
+True
+"soda" in items
+False
