@@ -1,0 +1,81 @@
+Python 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> text="ice cream"
+>>> text
+'ice cream'
+>>> text[0]
+'i'
+>>> text[3]
+' '
+>>> text[-1]
+'m'
+>>> text[0]='g'
+Traceback (most recent call last):
+  File "<pyshell#5>", line 1, in <module>
+    text[0]='g'
+TypeError: 'str' object does not support item assignment
+>>> text[0:3]
+'ice'
+>>> text[4:9]
+'cream'
+>>> text[4:]
+'cream'
+>>> text[:-1]
+'ice crea'
+>>> text[:-2]
+'ice cre'
+>>> text[:0]
+''
+>>> text="hello"
+>>> text='hello'
+>>> text='let's learn python'
+SyntaxError: unterminated string literal (detected at line 1)
+text="let's learn python"
+text='hello"world"'
+text
+'hello"world"'
+address="1 purple street
+SyntaxError: incomplete input
+address='''1 purple street
+new york
+usa'''
+print(address)
+1 purple street
+new york
+usa
+1 purple street
+SyntaxError: invalid syntax
+address
+'1 purple street\nnew york\nusa'
+
+
+s1="hello"
+s2="world"
+s=s1+s2
+print(s)
+helloworld
+s1+s2
+'helloworld'
+s1+" "+s2
+'hello world'
+s="total states in usa#"
+s="total states in usa#'
+SyntaxError: incomplete input
+num=25
+s+num
+Traceback (most recent call last):
+  File "<pyshell#37>", line 1, in <module>
+    s+num
+TypeError: can only concatenate str (not "int") to str
+num(s)
+Traceback (most recent call last):
+  File "<pyshell#38>", line 1, in <module>
+    num(s)
+TypeError: 'int' object is not callable
+str(num)
+'25'
+s+str(num)
+'total states in usa#25'
+str(num)+s
+'25total states in usa#'
+
